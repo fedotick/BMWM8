@@ -1,9 +1,15 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
 body {
     margin: 0;
 }
 
 header {
-    position: fixed top;
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 84px;
     display: flex; 
@@ -12,7 +18,30 @@ header {
     border-bottom: 2px solid rgb(187, 187, 187);
 }
 
+strong {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+}
+
 .content {
     width: 1480px;
     margin: auto;
+}
+
+.banner-text {
+    width: 600px;
+    height: 300px;
+    padding-right: 70px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 220px;
+    top: 350px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to left, rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%), rgba(0, 0, 0, 0));
+
 }
