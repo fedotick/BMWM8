@@ -14,8 +14,10 @@ header {
     height: 84px;
     display: flex; 
     align-items: center; 
+    backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 75%);
     border-bottom: 2px solid rgb(187, 187, 187);
+    z-index: 5;
 }
 
 strong {
@@ -26,11 +28,36 @@ h1 {
     font-size: 48px;
 }
 
+h2 {
+    margin-top: 0;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 32px;
+    margin: 0;
+}
+
 .content {
     width: 1480px;
     margin: auto;
+    position: relative;
 }
 
+.center {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.right {
+    text-align: right;
+    position: absolute;
+    right: 0;
+}
 .banner-text {
     width: 600px;
     height: 300px;
@@ -43,5 +70,117 @@ h1 {
     top: 350px;
     color: rgb(255, 255, 255);
     background: linear-gradient(to left, rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%), rgba(0, 0, 0, 0));
+}
 
+.chapter-1 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.chapter-1 div {
+    width: 1280px;
+    text-align: center;
+}
+
+.chapter {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.chapter-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.chapter-background img {
+    height: 100%;
+}
+
+.right {
+    align-items: right;
+}
+
+.chapter-content-left,
+.chapter-content-center,
+.chapter-content-right {
+    position: absolute;
+    width: 1480px;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    align-items: center; 
+}
+
+.chapter-content-left {
+    justify-content: flex-start;
+}
+
+.chapter-content-center {
+    justify-content: center;
+}
+
+.chapter-content-right {
+    justify-content: flex-end;
+}
+
+.chapter-text-left {
+    width: 600px;
+    text-align: left; 
+    margin-right: 80px;
+}
+
+.chapter-text-center {
+    width: 1280px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.chapter-text-right {
+    width: 600px;
+    text-align: right; 
+    margin-left: 80px;
+}
+
+.chapter-content-left img,
+.chapter-content-right img {
+    height: 500px;
+} 
+
+.shadow {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 75%);
+}
+
+footer {
+    position: relative;
+    height: 700px;
+}
+
+.links {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:end;
+    justify-content: center; 
+    z-index: 1;
+}
+
+.links img {
+    width: 32px;
+    margin: 0 5px 100px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
